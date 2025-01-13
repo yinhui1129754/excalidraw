@@ -21,6 +21,7 @@ export default defineConfig(({ mode }) => {
     // We need to specify the envDir since now there are no
     //more located in parallel with the vite.config.ts file but in parent dir
     envDir: "../",
+    base: './',
     build: {
       outDir: "build",
       rollupOptions: {
@@ -169,7 +170,7 @@ export default defineConfig(({ mode }) => {
             },
           ],
           start_url: "/",
-          id:"excalidraw",
+          id: "excalidraw",
           display: "standalone",
           theme_color: "#121212",
           background_color: "#ffffff",
